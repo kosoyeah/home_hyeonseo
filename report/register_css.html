@@ -7,10 +7,11 @@
         html,body{margin: 10px;}
         .ne{color: red;font-size: 10pt;}
         p{font-weight: bold; background-color: lightblue; width: 800px; padding-left: 10px;}
-        label{display: inline-block;margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+        label{display: inline-block; margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
         label span{color: red;}
         .introduction {margin-left: 70px;margin-bottom: 10px;}
         .submit{margin-left: 200px;}
+
 
 
     </style>
@@ -43,15 +44,17 @@
     <input type="text" id="schoolname" name="schoolname" size="12" required><br>
     <label for="major">전 공<span>*</span></label>
     <input type="text" id="major" name="major" size="12" required><br>
-    <label>졸업 여부<span>*</span>
+    <label>졸업 여부<span>*</span></label>
       <select name="graduation_status" id="graduation_status" required>
         <option value="0">---선택---</option>
         <option value="1">졸업예정</option>
         <option value="2">졸업</option>
-      </select>
-    </label><br>
-    <label>졸업(예정)일
-    <input type = "date"></label>
+      </select><br>
+    <label>졸업(예정)일</label>
+    <input type = "date">
+
+
+
   </div>
 
     <p>업무 경력</p>
