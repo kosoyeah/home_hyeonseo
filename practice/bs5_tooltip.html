@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>툴립 클래스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container mt-3">
+  <h3>Tooltip Example</h3>
+  <a href="https://blog.naver.com/soyenbbang" type="button" class="btn btn-primary" data-bs-toggle = "tooltip" title="나에 대해 알고 싶다면 버튼을 눌러보든지 말든지">Click me
+  </a>
+</div>
+<script>
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')) ;
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+
+</script>
+</body>
+</html>
