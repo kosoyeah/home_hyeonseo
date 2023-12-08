@@ -16,7 +16,7 @@
       }
 
   document.write("합은"+sum);
-  document.write("<div>");
+
 
 </script>
 
@@ -48,7 +48,7 @@ for (b = 1; b <= 10; b++) {
 <h3>챗지피티</h3>
 <script>
     var c = 0, d = 1;
-    while (d <= 10) { // 1부터 100까지의 수에 대한 예시
+    while (d <= 10) { // 1부터 10까지의 수에 대한 예시
         if (d % 3 == 1) {
             document.write(d + ' ');
             c += d;
@@ -56,6 +56,35 @@ for (b = 1; b <= 10; b++) {
         d++;
     }
     document.write("합은 " + c);
+</script>
+
+
+<h3>while-continue문 사용</h3>
+<script>
+    var r = 1, t = 0;
+    while (r <= 10) {
+        if (r % 3 !== 1) {
+            r++;
+            continue;
+        } else {
+            t += r;
+            r++;
+        }
+    }
+    document.write("1부터 " + (r - 1) + "까지 더한 값은 총 " + t + "이다");
+</script>
+
+<h3>do-continue문 사용</h3>
+<script>
+    var r = 1, t = 0;
+    do{
+        if (r % 3 == 1) {
+            document.write(r + ' ');
+            t += r;
+        } r++;
+    }
+    while (r<=10);
+    document.write("합은 총 " + t +" 이다")
 </script>
 
 </body>
