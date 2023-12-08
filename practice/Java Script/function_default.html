@@ -7,6 +7,9 @@
 <body>
 <script>
   function order_pizza(topping) {
+    if (topping === undefined){
+      topping = "Cheese";
+    }
     document.writeln("<br>Ordering pizza with topping " + topping);
   }
 
