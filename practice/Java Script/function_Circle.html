@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>함수 생성자와 함수 객체의 prototype 속성</title>
+</head>
+<body>
+<script>
+  function Circle(radius){
+    this.radius = radius;
+  }
+  Circle.prototype.get_area =
+          function () {
+            return Math.PI * Math.pow(this.radius, 2);
+          };
+
+
+  var my_circle = new Circle(10);
+  document.write("이 원의 반지름은 " + my_circle.radius +'<br>');
+  document.write("이 원의 면적은 " + my_circle.get_area());
+
+</script>
+</body>
+</html>
