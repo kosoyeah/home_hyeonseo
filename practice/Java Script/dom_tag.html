@@ -8,9 +8,25 @@
          var p = document.getElementById("firstP");
          p.style.color = "red";
        });
+
+       document.addEventListener("DOMContentLoaded", function() {
+       div_tags = document.getElementsByTagName("div");
+       var n = div_tags.length;
+       console.log(n);
+       });
+
+       document.addEventListener("DOMContentLoaded", function (){
+           var plain_classses = document.getElementsByClassName("soye");
+           var a = plain_classses.length;
+           console.log(a);
+       })
      </script>
 </head>
 <body>
   <p id="firstP">안녕하세요.환영합니다!</p>
+    <div>오늘 웹프로그래밍 기말고사를 본다. 동시에 웹프로그래밍 종강이다.</div>
+    <div>좋으면서도 싫은 이 감정은 뭘까. 졸업하기 싫다. 근데 전공공부는 더더 하기 싫다.</div>
+    <div class="soye">그냥 돈 많은 백수가 되고 싶나보다. I love you, Java.</div>
+    <div>나  java봐라~</div>
 </body>
 </html>
