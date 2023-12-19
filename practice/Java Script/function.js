@@ -14,3 +14,13 @@ var a = function (){
 function b(){
     document.write("<br>function b: message = " + message);
 }
+
+var c = function () {
+    var message = "inside function c";
+    document.write("<br>function c: message = " + message);
+
+    function d() {
+        document.write("<br>function d: message = " + message);
+    }
+    d();
+}

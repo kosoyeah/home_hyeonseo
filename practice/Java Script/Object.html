@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자 정의 객체</title>
+    <script>
+      var company = new Object();
+      company.name = 'Microsoft'; //name 속성 추가
+      company.ceo = new Object(); //또 다른 객체
+      company.ceo.name = 'Bill Gates'; //객체의 name 속성값
+      company.ceo.fav_color = 'blue';
+
+      console.log(company); //디버깅할 때 쓴다. 자바스크립트 전형 개발툴..에서는 이 오류가 나면 오류를 확인해볼 수 있다.
+      console.log(company.name);
+      console.log(company.ceo);
+      console.log(company.ceo.name);
+    </script>
+</head>
+<body>
+<script>
+      document.write('회사'+ company); //웹 문서에 출력할 때 쓴다
+      document.write('<br> 회사 이름: '+ company.name);
+      document.write('<br>회사 ceo: '+ company.ceo)
+      document.write('<br>회사 ceo 이름: '+ company.ceo.name)
+</script>
+</body>
+</html>

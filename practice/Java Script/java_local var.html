@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>변수 엑세스</title>
+  <script>
+    var x,z;
+    function f(){
+      var y;
+      x = 10;
+      y = 10;
+      z = 10;
+      document.write("전역변수 x=" + x);
+      document.write("<br>");
+      document.write("지역변수 y=" + y);
+      document.write("<br>");
+      document.write("전역변수 z=" + z);
+      document.write("<br>");
+    }
+
+
+    var a = 1000;
+    function g(){
+      var a = 1200;
+      document.write("지역변수 a:"+a)
+      document.write("<br>");
+      document.write("전역변수 a:"+this.a);
+    }
+  </script>
+</head>
+<body>
+<h3>지역변수와 전역변수</h3>
+<hr>
+<script>
+  f();
+  g();
+</script>
+</body>
+</html>

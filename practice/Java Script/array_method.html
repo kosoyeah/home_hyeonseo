@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배열 메소드</title>
+</head>
+<body>
+<script>
+  var a = ["황","김","이"]
+  var b = ["박"]
+  var c;
+</script>
+<h3>결합하기</h3>
+<script>
+  c = a.concat(b)
+  document.write("<br>Array a와 b의 결합: " + c)
+  a.reverse();
+  document.write("<br>a의 역순 재배치: " + a)
+  d = a.slice(0,1);
+  document.write("<br>인덱스 0부터 1 전까지는? " + d)
+  a.sort();
+  document.write("<br>증가순으로 재정렬: " + a)
+</script>
+
+</body>
+</html>

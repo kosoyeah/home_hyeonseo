@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>객체 리터럴을 사용한 객체 생성</title>
+</head>
+<body>
+<script>
+      var my_car = new Object();
+      my_car.make = "Hyundai";
+      my_car.model = "Grandeur";
+      my_car["purchase price"] = 3800;
+
+      for (var prop in my_car){ //속성명과 대응되는 value 출력
+        document.write("<br>"+prop+": "+my_car[prop]);
+        console.log(prop+":"+my_car[prop]);
+      }// 딕셔너리와 동일하다. 문법만 다르고!
+    </script>
+</body>
+</html>
